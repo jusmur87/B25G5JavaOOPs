@@ -4,4 +4,19 @@ package org.example.basicTasks;
 want to return them in lower case".
 */
 public class Task8 {
+
+    public static void main(String[] args) {
+
+        String [] words = {"Avocado", "Banana", "Apple", "Strawberry", "Pear"};
+
+        for(int i = 0; i < words.length; i++){
+            String w = words[i];
+
+            if(w.charAt(0) == 'A'){
+                System.out.println(w.toLowerCase());
+            }
+        }
+
+    }
+
 }
