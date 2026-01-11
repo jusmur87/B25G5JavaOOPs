@@ -5,4 +5,21 @@ in a given string. Words are separated by spaces or punctuation. For example, th
 "Hello, world!" should return 2.
 */
 public class Task7 {
+
+    public static  int wordCounter(String text) {
+        int count = 1;
+
+        for (int i = 0; i < text.length(); i++) {
+            if(text.charAt(i)== ' '){
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public static void main(String[] args) {
+        String sentence = "Hello batch Twenty Five";
+        int words = wordCounter(sentence);
+        System.out.println("Number Of Words: "+ words);
+    }
 }
